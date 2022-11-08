@@ -31,22 +31,22 @@ Experienced Investors are defined as those who already develop their own insight
 
 # Components
 ## Data Fetching
-  - Fetch the market data from Yahoo Finance and store it in the csv files
+  - Fetch the market data from Yahoo Finance API and store it in csv format.
 ## Feature Engineering
   - Process the raw data and add artificial features based on raw data for later training
 ## Model Setup
-  - Use tensor flow to initilize the LSTM model
+  - Use tensor flow to initilize the LSTM model for stock return forecasting.
 ## Hyperparameter Tuning
-  - Find the best number of hidden layer, number of neurons per layer and drop rate for the model
+  - Find the best number of hidden layer, number of neurons per layer and drop rate for the model.
 ## Prediction Function
-  - Use data fetching component to get the target input data and output the predicted return of stocks
+  - Use data fetching component to get the target input data and output the predicted return of stocks.
 ## Factor Selction & Scoring Criteria
-  - Select a particular factor and output the score of a particular stock
+  - Given the user input factors and output the score of stocks in candidate sectors based on factor-scoring criteria.
 ## Stock Ranking
-  - Rank the stocks within a particular sector based on factor selection and calculation
+  - Rank the stocks within candidate sectors based on its factor scores.
 ## Portfolio Construction
-  - Calculate the weight based on risk tolerance, expected return and target stocks.
+  - Calculate the weight based on risk tolerance, expected return based on Mean-Variance model.
 ## Graph Plotting
-  - Given the stock ticker and plot the trend of that stock in different time horizons
+  - Given the stock ticker and plot the trend of selected stock in different time windows.
 ## UI design
   - (to do)
