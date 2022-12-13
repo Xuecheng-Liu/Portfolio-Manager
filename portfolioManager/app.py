@@ -18,12 +18,20 @@ def new():
 # endpoint for experienced investor
 @app.route("/old", methods=["GET", "POST"])
 def old():
-    if request.method == "POST":
-        print(request.form.getlist("sector"))
+    # if request.method == "POST":
+    #     print(request.form.getlist("sector"))
     return render_template("old.html")
 
-# @app.route("/", methods=["GET", "POST"])
-# def new2():
-#     if request.method == "POST":
-#         print(request.form.getlist("hello"))
-#     return render_template("check.html")
+
+@app.route("/final", methods=["GET", "POST"])
+def final():
+    sectors = request.form.getlist("sector")
+    print(sectors)
+    print(request.form.get("return"))
+    print(request.form.get("num"))
+    # do the mean variance based on return,num and sectors
+    f = open("test.txt", "r")
+    print(f.read())
+    return render_template("final.html", sectors=sectors)
+
+
