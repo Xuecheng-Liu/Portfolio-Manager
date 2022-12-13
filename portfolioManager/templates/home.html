@@ -1,0 +1,38 @@
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Manager</title>
+    <style>
+    h1 {text-align: center;}
+    a {text-decoration: none;}
+    .button {
+            border-radius:50%;
+            height:200px;
+            width:200px;
+            background-color: white;
+            border: 4px solid pink;
+            color: black;
+            padding: 5px 10px;
+            font-size: 20px;
+            margin: 100px auto;
+            display:block;
+            cursor: pointer;}
+    </style>
+</head>
+
+<body>
+    <h1>Welcome to the Portfolio Manager!</h1>
+    <a href= "{{ url_for('new') }}">
+        <button class = "button">new investor</button>
+    </a>
+
+    <a href="{{ url_for('old') }}">
+        <button class = "button">experienced investor</button>
+    </a>
+</body>
+  
+</html>  
