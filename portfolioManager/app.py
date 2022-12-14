@@ -1,6 +1,9 @@
 from flask import Flask, render_template, request
 from XGboost import xgb_model
 from visualization import plot
+from factorScore import get_sector_factor_table, get_sector_stock
+from meanVariance import calculate_weight
+
 app = Flask(__name__)
 
 ticker_list = ["XLB", "XLC", "XLE", "XLF", "XLI", "XLK", "XLP", "XLRE", "XLU", "XLV", "XLY"]
@@ -28,15 +31,22 @@ def old():
 
 @app.route("/final", methods=["GET", "POST"])
 def final():
+    # get sectors selected from form
     sectors = request.form.getlist("sector")
-    print(sectors)
-    print((request.form.get("return")))
-    print(request.form.get("num"))
-    # do the mean variance based on return,num and sectors
-    f = open("test.txt", "r")
-    print(f.read())
-    return render_template("final.html", sectors=sectors)
 
+    # get stock recommendations based on the sectors and number of stock per sector
+
+
+    stock_list = get_sector_stock(int(request.form.get("num")), sectors)
+    print(stock_list)
+
+    #stock_list = ['DOW', 'APD', 'VZ', 'T']
+    # print((request.form.get("return")))
+    # print(request.form.get("num"))
+    # do the mean variance based on return,num and sectors
+    mappings = calculate_weight(stock_list, float((request.form.get("return"))))
+    print(mappings)
+    return render_template("final.html", sectors=sectors,mappings=mappings)
 
 
 if __name__ == "__main__":

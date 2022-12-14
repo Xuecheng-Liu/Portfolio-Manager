@@ -11,14 +11,18 @@
 
     <body>
         <h1>Your Suggested Portfolio</h1>
+
         <p>The sectors you selected are
             {% for sector in sectors %} {{ sector }}
             {% endfor %}
         </p>
+
+        <p>Your suggested Portfolio looks like this</p><br>
+        <ul>
+            {% for key,value in mappings.items() %}
+                <li>{{ key }} : {{ value }}</li>
+            {% endfor %}
+        </ul>
+
     </body>
 
-<p>
-    your portfolio should look like this
-</p>
-
-<p>Your back testing should look like this</p>
