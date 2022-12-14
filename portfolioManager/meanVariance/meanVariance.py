@@ -1,10 +1,12 @@
+'''
+This is the meanVariance module for calculating weights for portfolio.
+'''
+import yfinance as yf
 from pypfopt.expected_returns import mean_historical_return
 from pypfopt.risk_models import CovarianceShrinkage
-import yfinance as yf
 from pypfopt.efficient_frontier import EfficientFrontier
 
 
-# input: a list of tickers and expected return, return a dictionary with each ticker and weight
 def calculate_weight(tickers, er):
     '''
     Given the portfolio components stock tickers and user's expected return,
