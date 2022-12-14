@@ -6,7 +6,6 @@ from meanVariance import calculate_weight
 
 app = Flask(__name__)
 
-ticker_list = ["XLB", "XLC", "XLE", "XLF", "XLI", "XLK", "XLP", "XLRE", "XLU", "XLV", "XLY"]
 
 
 # end point for the main page

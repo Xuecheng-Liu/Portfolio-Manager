@@ -3,7 +3,7 @@ Test cases for XGBoost Algorithm
 """
 
 import unittest
-from XGBoost import xgb_model
+from ..XGboost import xgb_model
 
 
 class TestXGBoost(unittest.TestCase):

@@ -18,7 +18,7 @@ import unittest
 import numpy as np
 
 
-from meanVariance import calculate_weight
+from ..meanVariance import calculate_weight
 
 
 class TestMV(unittest.TestCase):

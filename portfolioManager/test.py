@@ -12,6 +12,6 @@
 #
 # (calculate_weight(tickers, 0.5))
 
-from factorScore import get_sector_factor_table,get_sector_stock
-stock_list1 = get_sector_stock(2, ['XLF', 'XLB'])
-print(stock_list1)
+# from factorScore import get_sector_factor_table,get_sector_stock
+# stock_list1 = get_sector_stock(2, ['XLF', 'XLB'])
+# print(stock_list1)

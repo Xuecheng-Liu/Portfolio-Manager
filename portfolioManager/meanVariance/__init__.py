@@ -1,1 +1,1 @@
-from .meanVariance import calculate_weight
+from .meanVariance import *
