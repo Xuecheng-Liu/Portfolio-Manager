@@ -30,6 +30,6 @@ def backtest(ticker_list, weight_list):
     plt.show()
 
 
-ticker_list = ['DOW', 'APD', 'GOOGL', 'T', 'PXD']
-weight_list = [0.13, 0.28, 0.45, 0.10, 0.04]
-backtest(ticker_list, weight_list)
+# ticker_list = ['DOW', 'APD', 'GOOGL', 'T', 'PXD']
+# weight_list = [0.13, 0.28, 0.45, 0.10, 0.04]
+# backtest(ticker_list, weight_list)
