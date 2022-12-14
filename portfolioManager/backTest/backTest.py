@@ -25,4 +25,4 @@ def backtest(ticker_list, weight_list):
     plt.ylabel("Portfolio Daily Return", font1)
     plt.tick_params(labelsize=20)
     plt.title("Portfolio Back-Testing")
-    plt.show()
+    plt.savefig(f'./static/backtest.jpg')
