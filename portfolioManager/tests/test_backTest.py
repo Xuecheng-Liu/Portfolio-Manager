@@ -13,7 +13,7 @@ Function:
 import unittest
 
 
-from ..backTest import*
+from ..backTest import backTest
 
 
 class Test_Back_Test(unittest.TestCase):
@@ -27,4 +27,4 @@ class Test_Back_Test(unittest.TestCase):
         """
         ticker_list = ['DOW', 'APD', 'GOOGL', 'T', 'PXD']
         weight_list = [0.13, 0.28, 0.45, 0.10, 0.04]
-        backtest(ticker_list, weight_list)
+        backTest.backtest(ticker_list, weight_list)

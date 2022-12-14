@@ -24,11 +24,5 @@ def backtest(ticker_list, weight_list):
     plt.xlabel("Date", font1)
     plt.ylabel("Portfolio Daily Return", font1)
     plt.tick_params(labelsize=20)
-    # plt.legend(loc="best",prop=font1)
     plt.title("Portfolio Back-Testing")
     plt.show()
-
-
-# ticker_list = ['DOW', 'APD', 'GOOGL', 'T', 'PXD']
-# weight_list = [0.13, 0.28, 0.45, 0.10, 0.04]
-# backtest(ticker_list, weight_list)
