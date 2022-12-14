@@ -1,3 +1,6 @@
+'''
+Train the XGboost and plot the 5-day ahead forecasting return
+'''
 from XGboost import xgb_model
 from visualization import plot
 
