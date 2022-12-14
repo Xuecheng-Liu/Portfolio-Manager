@@ -1,13 +1,13 @@
-# to do
 """
 This module is a test module for backtest model.
+
 Class:
     Test_Back_Test, a child class inheritted from unittest.TestCase
 Function:
   test_smoke(): a smoke test to check if MeanVariance can work without systax and runtime
                 error.
-  test_one_shot_1(), test_one_shot_2(): two one shot tests to check if knn
-                                        has the correct output.
+As backest function only generate a plot, we cannot write any edge case and one-shot case.
+Just a smoke test to check it can run without error.
 """
 
 import unittest
