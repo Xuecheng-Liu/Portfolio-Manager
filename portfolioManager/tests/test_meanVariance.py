@@ -1,4 +1,3 @@
-# test cases for mean variance optimization
 """
 This module is a test module for Mean-Variance model.
 Class:
