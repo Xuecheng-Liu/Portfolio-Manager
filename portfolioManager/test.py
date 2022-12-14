@@ -1,8 +1,12 @@
-# from XGboost import xgb_model
-# from visualization import plot
+from XGboost import xgb_model
+from visualization import plot
+
+data = xgb_model("XLY")
+plot(data)
+
+# import sys
 #
-# data = xgb_model("XLY")
-# plot(data)
+# print(sys.path[1]+"/portfolioManager/static")
 
 
 # from meanVariance import calculate_weight

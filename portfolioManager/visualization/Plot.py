@@ -1,3 +1,4 @@
+import sys
 import matplotlib.pyplot as plt
 
 
@@ -14,4 +15,5 @@ def plot(data):
     plt.ylim(-3, 3)
     plt.ylabel('Return %')
     plt.title(sector)
-    plt.savefig(f'./static/{sector}.jpg')
+    path = sys.path[1]+"/portfolioManager/static"
+    plt.savefig(f'{path}/{sector}.jpg')
