@@ -50,3 +50,4 @@ All financial data used in XGBoost trainning and portfolio calculating are all f
 ## Visualization
   - We use matplotlib package for plotting our forecasting and back-testing graph. It is a handy and readable way to visualize our prediction.
 ## UI design
+  - Integerated HTML, CSS and Bootstrap with Flask framework to generate web page, user interactive session and communicate data with back end.
