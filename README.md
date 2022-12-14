@@ -3,6 +3,21 @@
 ## Mission
 
 ## Project Objective
+ ```
+.
+├── data
+│   └── dashboard
+├── doc
+├── examples
+├── statelegiscraper
+│   ├── assets
+│   ├── helpers
+│   ├── states
+│   └── test
+├── LICENSE
+├── README.md
+└── environment.yml
+ ```
 
 ## Repository Structure
 
