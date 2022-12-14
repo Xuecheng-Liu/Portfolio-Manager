@@ -1,3 +1,6 @@
+"""
+This file will fire a flask app over local port
+"""
 from flask import Flask, render_template, request
 from factorScore import get_sector_factor_table, get_sector_stock
 from meanVariance import calculate_weight
@@ -7,28 +10,37 @@ import time
 app = Flask(__name__)
 
 
-# end point for the main page
+
 @app.route("/")
 def home():
+    '''
+    end point for the main page
+    '''
     return render_template("home.html")
 
 
-# endpoint for new investor
 @app.route("/new")
 def new():
+    '''
+    end point for the sector forecasting
+    '''
     return render_template("new.html")
 
 
 # endpoint for experienced investor
 @app.route("/old", methods=["GET", "POST"])
 def old():
-    # if request.method == "POST":
-    #     print(request.form.getlist("sector"))
+    '''
+    end point for the sector forecasting with user input
+    '''
     return render_template("old.html")
 
 
 @app.route("/final", methods=["GET", "POST"])
 def final():
+    '''
+    end point for portfolio page
+    '''
     # get sectors selected from form
     sectors = request.form.getlist("sector")
 
