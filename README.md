@@ -9,13 +9,18 @@
  ```
 .
 ├── data
-│   └── dashboard
 ├── doc
-├── examples
+├── portfolioManager
 ├── statelegiscraper
-│   ├── assets
-│   ├── helpers
-│   ├── states
+│   ├── XGboost
+│   ├── backTest
+│   ├── factorScore
+|   ├── meanVariance
+|   ├── static
+|   ├── templates
+|   ├── visualization
+|   ├── app.py
+|   ├── train.py
 │   └── test
 ├── LICENSE
 ├── README.md
