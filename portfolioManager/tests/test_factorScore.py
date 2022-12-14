@@ -40,7 +40,7 @@ class Test_Factor_Score(unittest.TestCase):
             get_sector_stock(n, sectors_list)
 
 
-    def test_one_shot_1(self):
+    def test_one_shot_(self):
         """
         One shot test using the known case of the given input data.
         Should return a list the same as the known result.
