@@ -6,22 +6,11 @@ Beginner Investors are defined as those who just beginner their investment life 
 - Just click the 'Sector Forecasting' button and get a report about the stocks or sectors he entered, which includes 11 graghs for 11 sectors, respectively.
 
 # User2: Experienced Sector Investor
-Experienced sector investors are defined as those who are interested in invested their moeny in stocks that are in different sectors to control its risk. Thus, they are more concerned about how sectors perform rather than how some particular stocks' return perform, and they are experienced in stock investment. They would like to use our application for short-term investment reference to meet his expectation on return.
+Experienced sector investors are defined as those who are interested in invested their moeny in stocks that are in different sectors to control its risk. Thus, they are more concerned about how sectors perform rather than how some particular stocks' return perform. Those investors have developed their own insights about stock investment, have some basic knowledge about financial anaysis on company report, and know how market factors work for forecasting stock return. They would like to use our application for short-term investment reference to meet their expectation on return.
 
 ## Use Case:
 -  Select the sectors that he is interested in along with the expected return and the number of stocks that he wish to select from each sectors.
--  Get a report about the portfolio we suggested he entered, including a portoflio weights, graph depicting back-testing return analysis, risk and sharo ratio.
-
-# User3: Experienced Investor
-Experienced Investors are defined as those who already develop their own insights about stock investment, have some basic knowledge about financial anaysis on company report, and know how market factors work for forecasting stock return. They would like to use our application to get some advice on how to construct a stock portfoliio to meet his expectation on return and outperform the benchmark.
-
-## Use Case
-- Enter the target return level and risk tolerance level that he has in mind.
-- Select some market factors that he finds helpful for forecasting.
-- Enter the ticker of benchmark index that he wishes to outperform.
-- (optional) Enter the ticker of stocks or sectors that he thinks should be included in his portfolio.
-- Get a report about a 10-stock portfolio that our application suggests he construct, including forecasting on future return & risk analysis, comparison with benchmark, and stock weight allocation. 
-
+-  Get a report about the portfolio we suggested he construct, including stocks weights, a graph depicting back-testing return analysis, risk and sharp ratio.
 
 
 
