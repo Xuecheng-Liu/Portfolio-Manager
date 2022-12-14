@@ -49,6 +49,6 @@ class Test_Factor_Score(unittest.TestCase):
         n = 2
         result = ['DOW', 'APD', 'GS', 'JPM']
         target = get_sector_stock(n, sectors_list)
-        print(target)
+        self.assertEqual(len(result), len(target))
         for i in range(len(result)):
             self.assertEqual(result[i], target[i])
