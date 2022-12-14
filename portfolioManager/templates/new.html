@@ -1,1 +1,73 @@
-<p>This page is for new investor</p>
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Sector Forecasting</title>
+        <style>
+        h1 {text-align: center;}
+        td { text-align: center; }
+        img {margin: 8px;width:325px;height:325px}
+        table {margin-left: auto;margin-right: auto;}
+        </style>
+    </head>
+
+    <body>
+        <h1>Sector Forecasting</h1>
+
+            <table>
+                <tr>
+                    <td>
+                        <img src="{{url_for('static', filename = 'XLB.jpg')}}"><br>
+                        <label>Materials Sector</label>
+                    </td>
+                    <td>
+                        <img src="{{url_for('static', filename = 'XLC.jpg')}}"><br>
+                        <label>Communication Sector</label>
+                    </td>
+                    <td>
+                        <img src="{{url_for('static', filename = 'XLE.jpg')}}"><br>
+                        <label>Energy Sector</label>
+                    </td>
+                    <td>
+                        <img src="{{url_for('static', filename = 'XLF.jpg')}}"><br>
+                        <label>Financial Sector</label>
+                    </td>
+                </tr>
+
+                <tr>
+                    <td>
+                        <img src="{{url_for('static', filename = 'XLI.jpg')}}"><br>
+                        <label>Industrial Sector</label>
+                    </td>
+                    <td>
+                        <img src="{{url_for('static', filename = 'XLK.jpg')}}"><br>
+                        <label>Technology Sector</label>
+                    </td>
+                    <td>
+                        <img src="{{url_for('static', filename = 'XLP.jpg')}}"><br>
+                        <label>Consumer Staples Sector</label>
+                    </td>
+                    <td>
+                        <img src="{{url_for('static', filename = 'XLRE.jpg')}}"><br>
+                        <label>Real Estate Sector</label>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="{{url_for('static', filename = 'XLU.jpg')}}"><br>
+                        <label>Utilities Sector</label>
+                    </td>
+                    <td>
+                        <img src="{{url_for('static', filename = 'XLV.jpg')}}"><br>
+                        <label>Health Care Sector</label>
+                    </td>
+                    <td>
+                        <img src="{{url_for('static', filename = 'XLY.jpg')}}"><br>
+                        <label>Consumer Discretionary Sector</label>
+                    </td>
+                </tr>
+            </table>
+
+    </body>
+</html>

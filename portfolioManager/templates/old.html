@@ -3,10 +3,13 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Sector Forecasting</title>
+        <title>Construct Portfolio</title>
         <style>
-        img {margin: 5px;width:75px;height:150px}
+        h1 {text-align: center;}
+        td { text-align: center; }
+        img {margin: 8px;width:325px;height:325px}
         table {margin-left: auto;margin-right: auto;}
+        .center{margin: auto;width: 60%;padding: 10px;width:30%}
         </style>
     </head>
 
@@ -16,72 +19,75 @@
             <table>
                 <tr>
                     <td>
-                        <img src="{{url_for('static', filename = 'test.PNG')}}"><br>
-                        <input type="checkbox" name="sector" value="sector1" >
-                        <label>Sector 1</label>
+                        <img src="{{url_for('static', filename = 'XLB.jpg')}}"><br>
+                        <input type="checkbox" name="sector" value="XLB" >
+                        <label>Materials Sector</label>
                     </td>
                     <td>
-                        <img src="{{url_for('static', filename = 'test.PNG')}}"><br>
-                        <input type="checkbox" name="sector" value="sector2" >
-                        <label>Sector 2</label>
+                        <img src="{{url_for('static', filename = 'XLC.jpg')}}"><br>
+                        <input type="checkbox" name="sector" value="XLC" >
+                        <label>Communication Sector</label>
                     </td>
                     <td>
-                        <img src="{{url_for('static', filename = 'test.PNG')}}"><br>
-                        <input type="checkbox" name="sector" value="sector3" >
-                        <label>Sector 3</label>
+                        <img src="{{url_for('static', filename = 'XLE.jpg')}}"><br>
+                        <input type="checkbox" name="sector" value="XLE" >
+                        <label>Energy Sector</label>
                     </td>
                     <td>
-                        <img src="{{url_for('static', filename = 'test.PNG')}}"><br>
-                        <input type="checkbox" name="sector" value="sector4" >
-                        <label>Sector 4</label>
+                        <img src="{{url_for('static', filename = 'XLF.jpg')}}"><br>
+                        <input type="checkbox" name="sector" value="XLF" >
+                        <label>Financial Sector</label>
                     </td>
                 </tr>
 
                 <tr>
                     <td>
-                        <img src="{{url_for('static', filename = 'test.PNG')}}"><br>
-                        <input type="checkbox" name="sector" value="sector5" >
-                        <label>Sector 5</label>
+                        <img src="{{url_for('static', filename = 'XLI.jpg')}}"><br>
+                        <input type="checkbox" name="sector" value="XLI" >
+                        <label>Industrial Sector</label>
                     </td>
                     <td>
-                        <img src="{{url_for('static', filename = 'test.PNG')}}"><br>
-                        <input type="checkbox" name="sector" value="sector6" >
-                        <label>Sector 6</label>
+                        <img src="{{url_for('static', filename = 'XLK.jpg')}}"><br>
+                        <input type="checkbox" name="sector" value="XLK" >
+                        <label>Technology Sector</label>
                     </td>
                     <td>
-                        <img src="{{url_for('static', filename = 'test.PNG')}}"><br>
-                        <input type="checkbox" name="sector" value="sector7" >
-                        <label>Sector 7</label>
+                        <img src="{{url_for('static', filename = 'XLP.jpg')}}"><br>
+                        <input type="checkbox" name="sector" value="XLP" >
+                        <label>Consumer Staples Sector</label>
                     </td>
                     <td>
-                        <img src="{{url_for('static', filename = 'test.PNG')}}"><br>
-                        <input type="checkbox" name="sector" value="sector8" >
-                        <label>Sector 8</label>
+                        <img src="{{url_for('static', filename = 'XLRE.jpg')}}"><br>
+                        <input type="checkbox" name="sector" value="XLRE" >
+                        <label>Read Estate Sector</label>
                     </td>
                 </tr>
                 <tr>
                     <td>
-                        <img src="{{url_for('static', filename = 'test.PNG')}}"><br>
-                        <input type="checkbox" name="sector" value="sector9" >
-                        <label>Sector 9</label>
+                        <img src="{{url_for('static', filename = 'XLU.jpg')}}"><br>
+                        <input type="checkbox" name="sector" value="XLU" >
+                        <label>Utilities Sector</label>
                     </td>
                     <td>
-                        <img src="{{url_for('static', filename = 'test.PNG')}}"><br>
-                        <input type="checkbox" name="sector" value="sector10" >
-                        <label>Sector 10</label>
+                        <img src="{{url_for('static', filename = 'XLV.jpg')}}"><br>
+                        <input type="checkbox" name="sector" value="XLV" >
+                        <label>Health Care Sector</label>
                     </td>
                     <td>
-                        <img src="{{url_for('static', filename = 'test.PNG')}}"><br>
-                        <input type="checkbox" name="sector" value="sector11" >
-                        <label>Sector 11</label>
+                        <img src="{{url_for('static', filename = 'XLY.jpg')}}"><br>
+                        <input type="checkbox" name="sector" value="XLY" >
+                        <label>Consumer Discretionary Sector</label>
                     </td>
                 </tr>
             </table>
-                <label>Your expected return</label>
-                <input type="number" name="return"><br>
+            <div class="center">
+                <label>Your expected annual return</label>
+                <input type="number" step="any" name="return"><br><br>
                 <label>Number of stocks per sector</label>
-                <input type="number" name="num">
+                <input type="number" step="any" name="num">
                 <input class = "button" type="submit">
+            </div>
+
         </form>
 
     </body>

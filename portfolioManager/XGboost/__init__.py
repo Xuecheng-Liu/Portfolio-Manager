@@ -1,1 +1,1 @@
-# to do
+from .Algorithm import *

@@ -1,5 +1,6 @@
 import yfinance as yf
 import talib as ta
+import pandas as pd
 from xgboost import XGBRegressor
 from sklearn.multioutput import MultiOutputRegressor
 
@@ -9,14 +10,6 @@ def xgb_model(ticker):
     data = data.drop('Adj Close', axis=1)
     data['Return'] = ((data['Close'] / data['Close'].shift(1)) - 1) * 100
     data = data.dropna()
-
-    for i in range(1, 10):
-        data['Open' + str(i)] = data['Open'].shift(i)
-        data['High' + str(i)] = data['High'].shift(i)
-        data['Low' + str(i)] = data['Low'].shift(i)
-        data['Close' + str(i)] = data['Close'].shift(i)
-        data['Volume' + str(i)] = data['Volume'].shift(i)
-        data['Return' + str(i)] = data['Return'].shift(i)
 
     data['SMA10'] = ta.SMA(data['Close'], timeperiod=10)
     data['SMA30'] = ta.SMA(data['Close'], timeperiod=30)
@@ -40,14 +33,13 @@ def xgb_model(ticker):
     data['Return-4'] = data['Return'].shift(-4)
     data['Return-5'] = data['Return'].shift(-5)
 
-    X_train = data['2010-01-01':].iloc[0:-5, 0:-5]
-    y_train = data['2010-01-01':].iloc[0:-5, -5:]
-    X_pred = data['2010-01-01':].iloc[-1:, 0:-5]
+    X_train = data['2015-01-01':].iloc[0:-5, 0:-5]
+    y_train = data['2015-01-01':].iloc[0:-5, -5:]
+    X_pred = data['2015-01-01':].iloc[-1:, 0:-5]
 
-    xgb = XGBRegressor(gamma=0.1, learning_rate=0.01, max_depth=3,
-                       min_child_weight=16, n_estimators=200, random_state=42)
+    xgb = XGBRegressor()
     mreg = MultiOutputRegressor(xgb).fit(X_train, y_train)
 
-    y_pred = mreg.predict(X_pred)
+    y_pred = pd.DataFrame(mreg.predict(X_pred), index=[ticker], columns=['Day1', 'Day2', 'Day3', 'Day4', 'Day5'])
 
     return y_pred
