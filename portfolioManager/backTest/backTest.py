@@ -1,6 +1,6 @@
-# to do
 import pandas as pd
 import yfinance as yf
+import matplotlib.pyplot as plt
 
 def backtest(ticker_list, weight_list):
     stock_backtest = pd.DataFrame()
@@ -15,7 +15,6 @@ def backtest(ticker_list, weight_list):
     stock_backtest['daily_return'] = portfolio_return.sum(axis=1)
 
     # plot
-    import matplotlib.pyplot as plt
     fontsize = 20
     font1 = {'size': fontsize}
     plt.figure(figsize=(15, 10))

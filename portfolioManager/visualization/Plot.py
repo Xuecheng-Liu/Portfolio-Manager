@@ -15,5 +15,5 @@ def plot(data):
     plt.ylim(-3, 3)
     plt.ylabel('Return %')
     plt.title(sector)
-    path = sys.path[1]+"/portfolioManager/static"
+    path = sys.path[0]+"/static"
     plt.savefig(f'{path}/{sector}.jpg')

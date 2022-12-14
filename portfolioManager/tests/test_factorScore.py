@@ -5,8 +5,7 @@ Class:
 Function:
   test_smoke(): a smoke test to check if MeanVariance can work without systax and runtime
                 error.
-  test_one_shot_1(), test_one_shot_2(): two one shot tests to check if knn
-                                        has the correct output.
+  test_one_shot_() : one shot tests to check if get_sector_stock has the correct output.
 """
 
 import unittest
@@ -27,6 +26,7 @@ class Test_Factor_Score(unittest.TestCase):
         """
         sectors_list = ['XLB', 'XLF']
         n = 2
+        get_sector_factor_table('XLB')
         get_sector_stock(n, sectors_list)
 
 
@@ -42,17 +42,4 @@ class Test_Factor_Score(unittest.TestCase):
         target = get_sector_stock(n, sectors_list)
         print(target)
         for i in range(len(result)):
-            self.assertTrue(result[i] in target)
-
-    def test_one_shot_2(self):
-        """
-        One shot test using the known case of the given input data.
-        Should return a list the same as the known result.
-        """
-        sectors_list = ['XLF', 'XLB','XLE']
-        n = 3
-        result = ['GS', 'JPM', 'WFC', 'DOW', 'APD', 'FCX', 'PXD', 'PSX', 'MPC']
-        target = get_sector_stock(n, sectors_list)
-        print(target)
-        for i in range(len(result)):
-            self.assertTrue(result[i] in target)
+            self.assertEqual(result[i], target[i])

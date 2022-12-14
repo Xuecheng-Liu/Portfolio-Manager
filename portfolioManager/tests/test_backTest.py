@@ -13,7 +13,7 @@ Function:
 import unittest
 
 
-from ..backTest import backtest
+from ..backTest import*
 
 
 class Test_Back_Test(unittest.TestCase):

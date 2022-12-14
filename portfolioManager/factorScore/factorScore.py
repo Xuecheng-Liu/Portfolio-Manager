@@ -42,6 +42,8 @@ def get_sector_factor_table(sector_ticker):
 
 
 def get_sector_stock(n, sectors_list):
+    if n > 10:
+        raise ValueError("Number of stock you want to select from sectors cannot be larger than 10")
     stock_list = []
     for sector_ticker in sectors_list:
         table = get_sector_factor_table(sector_ticker)
