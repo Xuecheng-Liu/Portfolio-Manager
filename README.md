@@ -3,6 +3,9 @@
 ## Mission
 
 ## Project Objective
+
+
+## Repository Structure
  ```
 .
 ├── data
@@ -19,9 +22,11 @@
 └── environment.yml
  ```
 
-## Repository Structure
-
 ## Usage
+step 1: git clone git@github.com:Xuecheng-Liu/Portfolio-Manager.git
+step 2:
+step 3:
+step 4:
 
 ## Contributions
 
