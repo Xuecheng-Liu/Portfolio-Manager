@@ -1,31 +1,16 @@
 # User 1: Beginner Investor
-Beginner Investors are defined as those who just beginner their investment life and do not have much knowledge about how the stock market goes. They would like using our application to get some historical stock data to do their own research or learn more about the market rather than using it as a investor advisor since they are likely to be cautious about stock return and relatively can tolerate no risk at market.
+Beginner Investors are defined as those who just beginner their investment life and do not have much knowledge about how the stock market goes. They would like using our application to get market forecasting or learn more about the market rather than using it as an investment advisor since they are likely to be cautious about stock return and relatively can tolerate no risk at market.
 
 
 ## Use Case
-- Enter the tickers of stocks or sectors that he wants to explore along with the time window.
-- (optional) Enter a ticker of benchmark, could be any stock or index
-- Get a report about the stocks or sectors he entered, including a graph depicting historical return, return & risk analysis on indicators, and compare their performance with the benchmark (if any).
+- Just click the 'Sector Forecasting' button and get a report about the stocks or sectors he entered, which includes 11 graghs for 11 sectors, respectively.
 
-# User2: Sector Investor
-Sector Investors are defined as those who are interested in invested their moeny in stocks that are in different sectors to control its risk. Thus, they are more concerned about how sectors perform rather than how some particular stocks' return perform. They would like to use our application for explore the historical or future trend for the sectors that he is interested in.
+# User2: Experienced Sector Investor
+Experienced sector investors are defined as those who are interested in invested their moeny in stocks that are in different sectors to control its risk. Thus, they are more concerned about how sectors perform rather than how some particular stocks' return perform. Those investors have developed their own insights about stock investment, have some basic knowledge about financial anaysis on company report, and know how market factors work for forecasting stock return. They would like to use our application for short-term investment reference to meet their expectation on return.
 
 ## Use Case:
--  Enter the tickers of the sectors that he is interested in along with the time window that can be set for both historical and forecasting uses.
--  (optional) Enter the ticker of a benchmark sector.
--  (optional) Enter the number of sectors that would be the most promising ones based on our application forecasting
--  Get a report about the sectors he entered, including a graph depicting historical and future return in the following days, return & risk analysis on indicators, compare their performance with the benmark (if any) and show the most promising sectors (if any) with their return forecasting.
-
-# User3: Experienced Investor
-Experienced Investors are defined as those who already develop their own insights about stock investment, have some basic knowledge about financial anaysis on company report, and know how market factors work for forecasting stock return. They would like to use our application to get some advice on how to construct a stock portfoliio to meet his expectation on return and outperform the benchmark.
-
-## Use Case
-- Enter the target return level and risk tolerance level that he has in mind.
-- Select some market factors that he finds helpful for forecasting.
-- Enter the ticker of benchmark index that he wishes to outperform.
-- (optional) Enter the ticker of stocks or sectors that he thinks should be included in his portfolio.
-- Get a report about a 10-stock portfolio that our application suggests he construct, including forecasting on future return & risk analysis, comparison with benchmark, and stock weight allocation. 
-
+-  Select the sectors that he is interested in along with the expected return and the number of stocks that he wish to select from each sectors.
+-  Get a report about the portfolio we suggested he construct, including stocks weights, a graph depicting back-testing return analysis, risk and sharp ratio.
 
 
 
