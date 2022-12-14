@@ -11,7 +11,11 @@ from sklearn.multioutput import MultiOutputRegressor
 def xgb_model(ticker):
     """
     This function implements the XGBoost algorithm for regression.
-    :param ticker: an abbreviation used to identify a particular stock
+    Parameters:
+        ticker: an abbreviation used to identify a particular stock
+
+    Return:
+        y_pred: a dataframe that contains 5 days future return.
     """
     if yf.Ticker(ticker).info['regularMarketPrice'] is None:
         raise ValueError("please enter valid ticker")
