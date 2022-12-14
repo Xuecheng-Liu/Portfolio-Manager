@@ -47,15 +47,3 @@ class TestMV(unittest.TestCase):
         er = 1
         with self.assertRaises(ValueError):
            calculate_weight(tickers, er)
-
-    def test_one_shot_2(self):
-        """
-        One shot test using the known case of the given input data.
-        Should return a dict the same as the known result.
-        """
-        tickers = ["AAPL", "COST", "KR", "JPM","BAC"]
-        er = 0.09
-        target  = calculate_weight(tickers, er)
-        result = {'AAPL': 0.07541, 'BAC': 0.0, 'COST': 0.11021, 'JPM': 0.46874, 'KR': 0.34564}
-        for i in result:
-            assert np.isclose(result[i], target[i])
