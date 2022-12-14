@@ -1,17 +1,10 @@
-# test cases for mean variance optimization
 """
-This module is a test module for Mean-Variance model.
+This module is a test module for visulizaiton module.
 Class:
-  TestKnn, a child class inheritted from unittest.TestCase
+   TestVisualization, a child class inheritted from unittest.TestCase
 Function:
-  test_smoke(): a smoke test to check if knn can work without systax and runtime
+  test_smoke(): a smoke test to check if plot function can work without systax and runtime
                 error.
-  test_edge_multi_dimensional_query(): a edge test to check if 2D query
-                                       is handled properly.
-  test_edge_no_match_shape(): a edge test to check if no shape between query and
-                            data is handled properly.
-  test_one_shot_1(), test_one_shot_2(): two one shot tests to check if knn
-                                        has the correct output.
 """
 
 import unittest
