@@ -50,6 +50,3 @@ def get_sector_stock(n, sectors_list):
             stock_list.append(stocks[i])
     return stock_list
 
-
-stock_list1 = get_sector_stock(2, ['XLF', 'XLB'])
-print(type(stock_list1))
