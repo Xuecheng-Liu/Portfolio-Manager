@@ -29,7 +29,7 @@ Help our investors with getting forecasting on sectors and give investment advic
 ## Usage
 Enter the following commends into the terminal <br>
 step 1: git clone git@github.com:Xuecheng-Liu/Portfolio-Manager.git <br>
-step 2: install the virtual env using <br>
+step 2: install the virtual env using `conda env create -f environment.yml` <br>
 step 3: cd portfolioManager <br>
 step 4: python train.py <br>
 step 5: python app.py <br>
