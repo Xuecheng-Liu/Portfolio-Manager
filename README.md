@@ -1,8 +1,6 @@
 # Portfolio-Manager
 **Team Members**: Xuecheng Liu, Wei Liu, Shengbo Jin, Patrick Xiao
 
-## Mission
-
 ## Project Objective
 
 
