@@ -1,4 +1,11 @@
-# functions to the stock based on factors
+
+'''
+This is the factor module for getting factor value for inner-sector stocks, and select n stocks from each sector
+'''
+import yfinance as yf
+import pandas as pd
+import numpy as np
+
 def get_sector_factor_table(sector_ticker):
     '''
     return an empty dataframe with sector top 10 components as index
