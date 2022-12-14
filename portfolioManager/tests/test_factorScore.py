@@ -29,6 +29,15 @@ class Test_Factor_Score(unittest.TestCase):
         get_sector_factor_table('XLB')
         get_sector_stock(n, sectors_list)
 
+    def test_edge_large_n(self):
+        """
+        Edge case test to see if it is handled properly when n is larger than
+        the number of sector components.
+        """
+        sectors_list = ['XLB', 'XLF']
+        n = 11
+        with self.assertRaises(ValueError):
+            get_sector_stock(n, sectors_list)
 
 
     def test_one_shot_1(self):
