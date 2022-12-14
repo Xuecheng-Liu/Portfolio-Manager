@@ -12,22 +12,7 @@ def calculate_weight(tickers, er):
     ef = EfficientFrontier(mu, S)
     weights = ef.efficient_return(er)
     cleaned_weights = ef.clean_weights()
-    print(ef.portfolio_performance(verbose=True))
+    ef.portfolio_performance(verbose=True)
     return dict(cleaned_weights)
 
 
-# tickers = ["MRNA", "PFE", "JNJ", "GOOGL",
-#            "AAPL", "COST", "WMT", "KR", "JPM",
-#            "BAC"]
-# (calculate_weight(tickers, 0.5))
-# df = yf.download(tickers=tickers, period="max", interval="1d")['Close'].iloc[-30:, :]
-#
-# mu = mean_historical_return(df)
-# S = CovarianceShrinkage(df).ledoit_wolf()
-#
-# ef = EfficientFrontier(mu, S)
-# weights = ef.efficient_return(0.5)
-#
-# cleaned_weights = ef.clean_weights()
-# print(dict(cleaned_weights))
-# ef.portfolio_performance(verbose=True)
