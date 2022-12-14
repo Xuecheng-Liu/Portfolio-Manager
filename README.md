@@ -2,7 +2,7 @@
 **Team Members**: Xuecheng Liu, Wei Liu, Shengbo Jin, Patrick Xiao
 
 ## Project Objective
-Help our investors with getting forecasting on sectors and give investment advice on constructing a stock portfolio from their preferred sectors
+Help our investors with getting forecasting on sectors and give investment advice on constructing a stock portfolio from their preferred sectors based on sector forecasting and factor-selecting strategy.
 
 ## Repository Structure
  ```
