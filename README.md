@@ -23,10 +23,11 @@
  ```
 
 ## Usage
-step 1: git clone git@github.com:Xuecheng-Liu/Portfolio-Manager.git
-step 2:
-step 3:
-step 4:
+Enter the following commends into the terminal <br>
+step 1: git clone git@github.com:Xuecheng-Liu/Portfolio-Manager.git <br>
+step 2: install the virtual env using <br>
+step 3: cd portfolioManager <br>
+step 4: 
 
 ## Contributions
 
