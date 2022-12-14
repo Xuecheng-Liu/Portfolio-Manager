@@ -1,6 +1,7 @@
-# functions to the stock based on factors
 '''
-This is the factor module for getting factor value for inner-sector stocks, and give their score for each factor respectively.
+This is the factorScore module for generate tables for sector and factor values for its component stocks,
+and assign factor score for them.
+Then select the highest n stocks from each sector that user selects to construct portfolio.
 '''
 import yfinance as yf
 import pandas as pd
@@ -8,8 +9,14 @@ import pandas as pd
 
 def get_sector_factor_table(sector_ticker):
     """
-    return an empty dataframe with sector top 10 components as index
-    This prepares for storing stock's factor value
+    Given the user's selected sector ticker, return a table than contains the sector
+    component stocks and its factor value and scores.
+
+    Parameter:
+        sector_ticker: a single string that represents a sector ticker
+    Return:
+        sector_factor_tableL: a dataframe that contains sector components stock as its index, and factor values,
+        factor scores and total scores and its columns.
     """
     # initiate sector components
     sector_compo = []
@@ -42,6 +49,16 @@ def get_sector_factor_table(sector_ticker):
 
 
 def get_sector_stock(n, sectors_list):
+    '''
+    Given user's input number of stock that should be selected from each sector and the sectors that user
+    prefers, return a list that contains stock tickers that are selected from factor-scoring method.
+
+    Parameters:
+        n: an int represents the number of stock that users want to select from each sector
+        sectors_list: a list represents the sectors that users want to select upon.
+    Return:
+        stock_list: a list that contains the tickers of the stocks that we wish users to construct portfolio upon.
+    '''
     if n >= 11:
         raise ValueError("Number of stock you want to select from sectors cannot be larger than 10")
     stock_list = []
