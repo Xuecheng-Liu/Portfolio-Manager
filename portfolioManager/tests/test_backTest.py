@@ -6,7 +6,7 @@ Class:
 Function:
   test_smoke(): a smoke test to check if MeanVariance can work without systax and runtime
                 error.
-As backest function only generate a plot, we cannot write any edge case and one-shot case.
+As backtest function only generates a graph, we cannot write any edge case and one-shot case.
 Just a smoke test to check it can run without error.
 """
 
@@ -16,6 +16,8 @@ import os
 from ..backTest import backTest
 
 import portfolioManager
+
+
 path = os.path.join(portfolioManager.__path__[0], 'static')
 
 class Test_Back_Test(unittest.TestCase):

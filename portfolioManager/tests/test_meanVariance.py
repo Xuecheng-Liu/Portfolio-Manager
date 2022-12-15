@@ -7,7 +7,7 @@ Function:
                 error.
   test_edge_large_return: an edge test to check if large return could be handled.
 
-As Mean-Variance model compute by real-time stock price, and it may change dramatically
+As Mean-Variance model computes with real-time stock price, and it may change dramatically
 each day, it is hard to write one-shot test to see if output portfolio weight matches our expectation.
 Therefore, we do not write any one-shot test here.
 """

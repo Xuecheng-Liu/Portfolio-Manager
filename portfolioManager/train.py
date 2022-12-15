@@ -1,5 +1,6 @@
 '''
-Train the XGboost and plot the 5-day ahead forecasting return
+This is XGBosst trainning model and it would plot the 5-day ahead forecasting return
+after finishing trainning.
 '''
 from XGboost import xgb_model
 from visualization import plot

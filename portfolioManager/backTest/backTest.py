@@ -3,9 +3,11 @@ This is the backtest module for testing our constructed portfolio daily return d
 '''
 import sys
 import os
+
 import pandas as pd
 import yfinance as yf
 import matplotlib.pyplot as plt
+
 
 def backtest(ticker_list, weight_list, path = None):
     '''
@@ -17,6 +19,7 @@ def backtest(ticker_list, weight_list, path = None):
                      It should be returned from get_sector_stock funtion from factorScore.
         weight_list: a list that contains the weight than assigned for stocks in ticker_list.
                      It should be returned from calculate_weight function form meanVariance.
+               path: optional parameter for giving the save path during testing.
     Return:
         generate a graph for plotting daily return of constructed portfolio during the past 12 month.
     '''
@@ -41,18 +44,7 @@ def backtest(ticker_list, weight_list, path = None):
     plt.ylabel("Portfolio Daily Return", font1)
     plt.tick_params(labelsize=20)
     plt.title("Portfolio Back-Testing")
-    #plt.savefig(f'./static/backtest.jpg')
-
     if path == None:
         plt.savefig(f'./static/backtest.jpg')
     else:
         plt.savefig(path + '/backtest_test.jpg')
-
-    # if path == None:
-    #     plt.savefig(f'./static/backtest.jpg')
-    # else:
-    #     plt.savefig(path + '/backtest_test.jpg')
-
-# ticker_list = ['DOW', 'APD', 'GOOGL', 'T', 'PXD']
-# weight_list = [0.13, 0.28, 0.45, 0.10, 0.04]
-# backtest(ticker_list, weight_list)

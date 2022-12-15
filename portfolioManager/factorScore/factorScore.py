@@ -18,7 +18,6 @@ def get_sector_factor_table(sector_ticker):
         sector_factor_tableL: a dataframe that contains sector components stock as its index, and factor values,
         factor scores and total scores and its columns.
     """
-    # initiate sector components
     sector_compo = []
     sector_info = yf.Ticker(sector_ticker).info['holdings']
     for i in range(len(sector_info)):
@@ -26,14 +25,14 @@ def get_sector_factor_table(sector_ticker):
     sector_columns = ['dividend_rate', 'operating_CF', 'market_cap', 'ROE', 'PB']
     sector_table = pd.DataFrame(index=sector_compo, columns=sector_columns)
     sector_table.index = sector_compo
-    # add factors values: dividend_rate, roe2pb, cf2p12
+
     factors = ['trailingAnnualDividendRate', 'operatingCashflow', 'marketCap', 'returnOnEquity', 'priceToBook']
     for ticker in sector_table.index:
         ticker_info = yf.Ticker(ticker).info
         for j in range(len(factors)):
             if factors[j] in ticker_info:
                 sector_table.loc[ticker, sector_columns[j]] = ticker_info[factors[j]]
-    # calculate factor and assgin scores
+
     sector_table['ROE2PB'] = sector_table['ROE'] / sector_table['PB']
     sector_table['CF2P12'] = sector_table['operating_CF'] / sector_table['market_cap']
     factor_columns = ['dividend_rate', 'ROE2PB', 'CF2P12']
@@ -61,6 +60,8 @@ def get_sector_stock(n, sectors_list):
     '''
     if n >= 11:
         raise ValueError("Number of stock you want to select from sectors cannot be larger than 10")
+    if n == 1 and len(sectors_list) == 1:
+        raise ValueError("Too few sectors and stocks! Please try again!")
     stock_list = []
     for sector_ticker in sectors_list:
         table = get_sector_factor_table(sector_ticker)

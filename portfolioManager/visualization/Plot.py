@@ -1,9 +1,20 @@
-import os
+'''
+This is the visualization module for plotting sector forecasting bar graph.
+'''
 import sys
 import matplotlib.pyplot as plt
 
 
 def plot(data, path = None):
+    '''
+    Given the dataframe that contains sectors forecasting infomation, generate
+    bar graphs to visualizate forecasting.
+    Parameters:
+        data: the sector forecasting dataframe
+        path: optional parameter for giving the save path during testing.
+    Return:
+        generate bar graph that red and green indicate loss and gain.
+    '''
     plt.clf()
     x = data.columns.values.tolist()
     y = data.values.reshape(5, ).tolist()
