@@ -40,7 +40,8 @@ Considering the user experience while using the web app, we only select the top 
 Meanwhile, the website would crash (diplay internal server error) if the meanVariance module cannot find the solution based on user input.
 
 ## Testing
-Enter the commend `python -m unittest` at the top-level directory `Portfolio-Manager`.
+Run the commend `python -m unittest` at the top-level directory `Portfolio-Manager`.
+All 9 tests should be run around 100 secs.
 
 ## Acknowledgement
 Many thanks to Dr. David Beck and Elizabeth Pelletier from the University of Washington for their support, guidance, and feedback in the development of this project.
