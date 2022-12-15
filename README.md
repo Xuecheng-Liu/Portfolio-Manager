@@ -33,7 +33,7 @@ step 2: install the virtual env using `conda env create -f environment.yml` <br>
 step 3: change your current directory with `cd portfolioManager` <br>
 step 4: Generate sectors forecasting with `python train.py` <br>
 step 5: Initialize our application with `python portfolioManager.py` <br>
-step 6: Copy the URL link to your favourite browser and begin your investment adventure!
+step 6: Copy the URL link `http://127.0.0.1:5000` to your favourite browser and begin your investment adventure!
 
 ## Acknowledgement
 Many thanks to Dr. David Beck and Elizabeth Pelletier from the University of Washington for their support, guidance, and feedback in the development of this project.
