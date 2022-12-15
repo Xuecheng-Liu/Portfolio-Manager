@@ -2,6 +2,7 @@
 This is the backtest module for testing our constructed portfolio daily return during the past 12 month.
 '''
 import sys
+import os
 import pandas as pd
 import yfinance as yf
 import matplotlib.pyplot as plt
@@ -40,8 +41,18 @@ def backtest(ticker_list, weight_list, path = None):
     plt.ylabel("Portfolio Daily Return", font1)
     plt.tick_params(labelsize=20)
     plt.title("Portfolio Back-Testing")
+    #plt.savefig(f'./static/backtest.jpg')
+
     if path == None:
-        path = sys.path[0]+"/static"
-        plt.savefig(f'{path}/backtest.jpg')
+        plt.savefig(f'./static/backtest.jpg')
     else:
         plt.savefig(path + '/backtest_test.jpg')
+
+    # if path == None:
+    #     plt.savefig(f'./static/backtest.jpg')
+    # else:
+    #     plt.savefig(path + '/backtest_test.jpg')
+
+# ticker_list = ['DOW', 'APD', 'GOOGL', 'T', 'PXD']
+# weight_list = [0.13, 0.28, 0.45, 0.10, 0.04]
+# backtest(ticker_list, weight_list)

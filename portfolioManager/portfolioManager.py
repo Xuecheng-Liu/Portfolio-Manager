@@ -55,7 +55,7 @@ def final():
     for key, value in mappings.items():
         ticker_list.append(key)
         weight_list.append(value)
-    #backtest(ticker_list, weight_list)
+    backtest(ticker_list, weight_list)
     return render_template("final.html", sectors=sectors, mappings=mappings)
 
 
