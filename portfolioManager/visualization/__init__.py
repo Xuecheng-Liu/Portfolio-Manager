@@ -1,1 +1,1 @@
-from .Plot import *
+from .Plot import plot

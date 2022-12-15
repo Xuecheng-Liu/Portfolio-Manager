@@ -8,11 +8,13 @@ Function:
 """
 
 import unittest
-import numpy as np
+import os
 
 from ..visualization import plot
 from ..XGboost import xgb_model
+import portfolioManager
 
+path = os.path.join(portfolioManager.__path__[0], 'static')
 
 class TestVisualization(unittest.TestCase):
     """
@@ -25,4 +27,4 @@ class TestVisualization(unittest.TestCase):
         runtime error.
         """
         data = xgb_model("XLY")
-        plot(data)
+        plot(data, path)

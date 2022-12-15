@@ -11,10 +11,12 @@ Just a smoke test to check it can run without error.
 """
 
 import unittest
-
+import os
 
 from ..backTest import backTest
 
+import portfolioManager
+path = os.path.join(portfolioManager.__path__[0], 'static')
 
 class Test_Back_Test(unittest.TestCase):
     """
@@ -27,4 +29,4 @@ class Test_Back_Test(unittest.TestCase):
         """
         ticker_list = ['DOW', 'APD', 'GOOGL', 'T', 'PXD']
         weight_list = [0.13, 0.28, 0.45, 0.10, 0.04]
-        backTest.backtest(ticker_list, weight_list)
+        backTest.backtest(ticker_list, weight_list, path)

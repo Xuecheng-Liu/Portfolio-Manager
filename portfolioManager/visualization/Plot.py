@@ -1,8 +1,9 @@
+import os
 import sys
 import matplotlib.pyplot as plt
 
 
-def plot(data):
+def plot(data, path = None):
     plt.clf()
     x = data.columns.values.tolist()
     y = data.values.reshape(5, ).tolist()
@@ -15,5 +16,10 @@ def plot(data):
     plt.ylim(-3, 3)
     plt.ylabel('Return %')
     plt.title(sector)
-    path = sys.path[0]+"/static"
-    plt.savefig(f'{path}/{sector}.jpg')
+
+    if path == None:
+        path = sys.path[0]+"/static"
+        plt.savefig(f'{path}/{sector}.jpg')
+    else:
+        plt.savefig(path + '/sector_test.jpg')
+
