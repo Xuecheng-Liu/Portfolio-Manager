@@ -32,7 +32,7 @@ step 1: git clone our repoistory with `git clone git@github.com:Xuecheng-Liu/Por
 step 2: install the virtual env using `conda env create -f environment.yml` <br>
 step 3: change your current directory with `cd portfolioManager` <br>
 step 4: Generate sectors forecasting with `python train.py` <br>
-step 5: Initialize our application with `python app.py` <br>
+step 5: Initialize our application with `python portfolioManager.py` <br>
 step 6: Copy the URL link to your favourite browser and begin your investment adventure!
 
 ## Acknowledgement
