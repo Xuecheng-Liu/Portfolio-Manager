@@ -31,9 +31,9 @@ Enter the following commends into the terminal <br>
 - Step 1: git clone our repoistory with `git clone git@github.com:Xuecheng-Liu/Portfolio-Manager.git`<br>
 - Step 2: install the virtual env using `conda env create -f environment.yml` <br>
 - Step 3: change your current directory with `cd portfolioManager` <br>
-- Step 4: Generate sectors forecasting with `python train.py` <br>
-- Step 5: Initialize our application with `python portfolioManager.py` <br>
-- Step 6: Copy the URL link `http://127.0.0.1:5000` to your favourite browser and begin your investment adventure!
+- Step 4: generate sectors forecasting with `python train.py` <br>
+- Step 5: initialize our application with `python portfolioManager.py` <br>
+- Step 6: copy the URL link `http://127.0.0.1:5000` to your favourite browser and begin your investment adventure! <br>
 
 ## Future Work
 Considering the user experience while using the web app, we only select the top 10 component stocks in each sector to reducing the waiting time while using the app. Future work to address this issue might develop a database in the backend to keep tracking of component stocks instead of making real-time API call to Yahoo Finance.
