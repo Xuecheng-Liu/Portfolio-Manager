@@ -37,11 +37,11 @@ Enter the following commends into the terminal <br>
 
 ## Future Work
 Considering the user experience while using the web app, we only select the top 10 component stocks in each sector to reducing the waiting time while using the app. Future work to address this issue might develop a database in the backend to keep tracking of component stocks instead of making real-time API call to Yahoo Finance.
-Meanwhile, the website would crash (diplay internal server error) if the meanVariance module cannot find the solution based on user input.
+Meanwhile, the website would crash (display internal server error) if the meanVariance module cannot find the solution based on user input.
 
 ## Testing
 Run the commend `python -m unittest` at the top-level directory `Portfolio-Manager`.
-All 9 tests should be run around 100 secs.
+All 9 tests should be run within 100 secs.
 
 ## Acknowledgement
 Many thanks to Dr. David Beck and Elizabeth Pelletier from the University of Washington for their support, guidance, and feedback in the development of this project.
