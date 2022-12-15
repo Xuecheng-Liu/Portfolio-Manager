@@ -35,6 +35,10 @@ Enter the following commends into the terminal <br>
 - Step 5: Initialize our application with `python portfolioManager.py` <br>
 - Step 6: Copy the URL link `http://127.0.0.1:5000` to your favourite browser and begin your investment adventure!
 
+## Future Work
+Considering the user experience while using the web app, we only select the top 10 component stocks in each sector to reducing the waiting time while using the app. Future work to address this issue might develop a database in the backend to keep tracking of component stocks instead of making real-time API call to Yahoo Finance.
+Meanwhile, the website would crash (diplay internal server error) if the meanVariance module cannot find the solution based on user input.
+
 ## Testing
 Enter the commend `python -m unittest` at the top-level directory `Portfolio-Manager`.
 
